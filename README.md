@@ -1,1 +1,1 @@
-"# wdd-130-whiting" 
+# [Patten Whiting] 
