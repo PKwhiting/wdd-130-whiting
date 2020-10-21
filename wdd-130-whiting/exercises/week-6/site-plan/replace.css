@@ -1,0 +1,107 @@
+
+
+:root {
+    --primary1: #49BEAA;
+    --primary2: #EF767A;
+    --primary3: #456990;
+    --accent1: #E4DFDA;
+    --accent2: #49DCB1;
+    --accent3: #EEB868;
+    --font1: #000000;
+    --font2: #FFFFFF;
+    --fontFamily1: 'Bebas Neue', cursive;
+    --fontFamily2: 'Source Serif Pro', serif;
+  }
+
+
+
+
+.light-design .primary-color-1 {
+    background-color: var(--primary1);
+}
+
+.light-design .primary-color-2 {
+    background-color: var(--primary2);
+}
+
+.light-design .primary-color-3 {
+    background-color: var(--primary3);
+}
+
+.light-design .accent-color-1 {
+    background-color: var(--accent1);
+}
+
+.light-design .accent-color-2 {
+    background-color: var(--accent2);
+}
+
+.light-design .accent-color-3 {
+    background-color: var(--accent3);
+}
+
+.light-design .font-color-1 {
+    background-color: var(--font1);
+}
+
+.light-design .font-color-3 {
+    background-color: var(--font2);
+}
+
+.light-design .logo-outer {
+    background-color: var(--primary1);
+}
+
+.light-design .logo-inner {
+    background-color: var(--primary2);
+}
+
+.light-design header {
+    background-color: var(--primary3);
+    color: var(--font2);
+}
+
+.light-design footer {
+    background-color: var(--primary3);
+    color: var(--font1);
+}
+
+.light-design .img-1 {
+    border-color:var(--primary1);
+}
+
+.light-design .img-2 {
+    border-color: var(--primary2);
+}
+
+.light-design .img-3 {
+    border-color: var(--primary3);
+}
+
+.light-design .img-4 {
+    border-color: var(--accent1);
+}
+
+.light-design .img-5 {
+    border-color: var(--accent2);
+}
+
+.light-design .img-6 {
+    border-color: var(--accent3);
+}
+
+.light-design a {
+    color: var(--accent1);
+}
+
+.light-design {
+    font-family: var(--fontFamily2);
+}
+
+.light-design h1, .light-design h2, .light-design h3, .light-design h4, .light-design h5, .light-design h6 {
+    font-family: var(--fontFamily1);
+}
+
+.light-design {
+    background-color: var(--accent1);
+}
