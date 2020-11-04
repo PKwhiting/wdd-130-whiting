@@ -1,0 +1,47 @@
+body {
+    background: #E6EBE0;
+}
+
+header {
+    background-color: #ED6A5A;
+    height: 10vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 47.5% 47.5% 5%;
+}
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#header {
+    grid-column: 1/2;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 50px;
+}
+#nav-icon {
+    font-size: 50px;
+    grid-column: 3/4;
+    justify-content: center;
+}
+li {
+    list-style-type:none
+}
+#open-menu {
+    background-color:  #ED6A5A;
+    font-size: 30px;
+    height: 30vh;
+    width: 110.5%;
+    grid-column: 2/3;
+    text-align: center;
+}
+#x-icon {
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    grid-column: 3/4;
+}
+#form {
+    margin-top: 10%;
+}

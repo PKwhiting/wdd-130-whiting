@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="header">JavaScript Project</h1>
+        <div id="nav-icon"> 
+            <nav>
+                <i class="fas fa-bars"></i>
+            </nav>
+        </div>
+        <i id="x-icon" class="fas fa-times-circle"></i>
+        <div id="open-menu">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Options</li>
+                    <li>Contact Us</li>
+                    <li>Settings</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div>
+            <form id="form" onsubmit="return false;">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit" id="submit"> 
+            </form>
+        </div>    
+        <p id="form-output">
+
+        </p>
+    </main>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
