@@ -1,10 +1,32 @@
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKmSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Chettan 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloochettan2/v1/vm8rdRbmXEva26PK-NtuX4ynWEznQNFfMg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Convergence';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/convergence/v9/rax5HiePvdgXPmmMHcIPYRha.ttf) format('truetype');
+}
 html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 175%;
   text-rendering: optimizeLegibility;
+  background-color: #565D75;
 }
 body {
   display: flex;
@@ -14,13 +36,20 @@ body {
 body header {
   display: flex;
   flex-direction: row;
-  font-size: 1.15rem;
-  border-bottom: 1px solid #000000;
+  font-size: 1.3rem;
   padding: 15px;
+}
+body header div a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 80px;
+  font-weight: bold;
 }
 body header nav {
   flex: 1;
   text-align: right;
+  margin-top: 30px;
 }
 body header nav ul {
   margin: 0;
@@ -32,20 +61,57 @@ body header nav ul li {
   padding: 7.5px;
   margin-right: 7.5px;
 }
+body header nav ul li a {
+  color: #FFFFFF;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: #D4AFB9;
+}
 body main {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   flex: 1;
   padding: 15px;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+body main h1 {
+  color: #FFFFFF;
+  font-size: 2.8em;
+  font-family: 'Convergence', sans-serif;
+  margin-left: 30px;
+}
+body main #intro-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 25%;
+  margin-left: 30px;
+}
+body main #intro-section #intro-para {
+  grid-column: 0.5;
+  font-family: 'Arvo', serif;
+  color: #FFFFFF;
+  margin-right: 15px;
+}
+body main #intro-section img {
+  grid-column: 0.66666667;
+  background-color: transparent;
+  width: 600px;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+body main .card-images {
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 20%;
 }
 body footer {
   display: flex;
   flex-direction: row;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   border-top: 1px solid #000000;
   padding: 15px;
+  background-color: #FFFFFF;
 }
 body footer #legal {
   flex: 1;
