@@ -8,6 +8,10 @@
 
 @primary-color: #565D75;
 @secondary-color: #FFFFFF;
+@tertiary-color: #D4AFB9;
+@quaternary-color: #92B9BD;
+@quinary-color: #A8D4AD;
+@senary-color: #F2F79E;
 @spacing: 15px;
 @header-size: 2.8em;
 @font-size: 1.3rem;
@@ -16,7 +20,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 175%;
+    height: 155%;
     text-rendering: optimizeLegibility;
     background-color: @primary-color;
 }
@@ -33,7 +37,7 @@ body {
         padding: @spacing;
             div{
                 a{
-                    color: @secondary-color;
+                    color: @tertiary-color;
                     text-decoration: none;
                     font-family: @logo-font;
                     font-size: 80px;
@@ -73,9 +77,11 @@ body {
         font-size: @font-size;
         flex: 1;
         padding: @spacing;
+        margin: 0;
+        padding: 0;
 
         h1{
-            color: @secondary-color;
+            color: @senary-color;
             font-size: @header-size;
             font-family: @header-font;
             margin-left: @spacing*2;
@@ -84,7 +90,7 @@ body {
         #intro-section{
             display: grid;
             grid-template-columns: 50% 50%;
-            height: 25%;
+            height: 400px;
             margin-left: @spacing*2;
             
             #intro-para{
@@ -94,32 +100,72 @@ body {
                 margin-right: @spacing;
             }
 
+            button{
+                background-color: @primary-color;
+                border: 1px solid @secondary-color;
+                border-radius: 40px;
+                font-size: 30px;
+                color: @secondary-color;
+                font-family: @header-font;
+                width: 250px;
+                margin-left: 25px;
+                margin-right: auto;
+            }
+            button:hover{
+                background-color: @tertiary-color;
+                border-color: @tertiary-color;
+            }
+
             img{
                 grid-column: 2/3;
                 background-color: transparent;
                 width: 600px;
                 margin-top: 30px;
                 margin-left: 40px;
-                
+                mix-blend-mode: multiply;
 
 
             }
         }
 
-        .card-images{
+        #card-container{
             width: 100%;
-            background-color: @secondary-color;
-            height: 20%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
         }
+            .cards{
+                background-color: @secondary-color;
+                width: 300px;
+                height: 650px;
+                margin-top: auto;
+                margin-bottom: auto;
+                box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+            }
+                .cards-img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 100px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    margin-top: @spacing*2;
+                }
+
+                .card-text{
+                    margin-left: 60px;
+                    margin-right: 60px;
+                    font-family: @text-font;
+                }
     }
 
     footer {
         display: flex;
         flex-direction: row;
         font-size: @font-size;
-        border-top: 1px solid @border;
         padding: @spacing;
-        background-color: @secondary-color;
+        background-color: @primary-color;
+        color: @secondary-color;
 
         #legal {
             flex: 1;
@@ -138,7 +184,20 @@ body {
                     display: inline-block;
                     padding: @spacing / 2;
                     margin-right: @spacing / 2;
+
+                    a{
+                        color: @secondary-color;
+                        font-family: @header-font;
+                        font-size: 30px;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: @tertiary-color;
+                    }
+            
+                    
                 }
+                   
             }
         }
     }
