@@ -70,85 +70,74 @@ body header nav ul li a {
 body header nav ul li a:hover {
   color: #D4AFB9;
 }
-body main {
-  font-size: 1.3rem;
-  flex: 1;
-  padding: 15px;
-  margin: 0;
-  padding: 0;
+body main .banner {
+  width: 100%;
+  height: 80px;
+  background-color: #FFFFFF;
 }
-body main h1 {
-  color: #F2F79E;
-  font-size: 2.8em;
+body main .banner h1 {
   font-family: 'Convergence', sans-serif;
-  margin-left: 30px;
+  font-size: 4.2em;
+  color: #565D75;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-body main #intro-section {
+body main #section-1 {
   display: grid;
   grid-template-columns: 50% 50%;
   height: 400px;
-  margin-left: 30px;
-}
-body main #intro-section #intro-para {
-  grid-column: 0.5;
-  font-family: 'Arvo', serif;
-  color: #FFFFFF;
-  margin-right: 15px;
-}
-body main #intro-section button {
-  background-color: #565D75;
-  border: 1px solid #FFFFFF;
-  border-radius: 40px;
-  font-size: 30px;
-  color: #FFFFFF;
-  font-family: 'Convergence', sans-serif;
-  width: 250px;
-  margin-left: 25px;
-  margin-right: auto;
-}
-body main #intro-section button:hover {
-  background-color: #D4AFB9;
-  border-color: #D4AFB9;
-}
-body main #intro-section img {
-  grid-column: 0.66666667;
-  background-color: transparent;
-  width: 600px;
-  margin-top: 30px;
-  margin-left: 40px;
-  mix-blend-mode: multiply;
-}
-body main #card-container {
   width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: center;
 }
-body main .cards {
-  background-color: #FFFFFF;
-  width: 300px;
-  height: 700px;
-  margin-top: auto;
-  margin-bottom: auto;
-  box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
-}
-body main .cards-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 30px;
-}
-body main .card-text {
-  margin-left: 60px;
-  margin-right: 60px;
+body main #section-1 #para-1 {
   font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  line-height: 150%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-body main .card-button {
-  margin-right: auto;
-  margin-left: 90px;
+body main #section-2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 400px;
+  width: 100%;
+  background-color: #FFFFFF;
+  align-content: center;
+  justify-content: center;
+}
+body main #section-2 #para-2 {
+  font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  line-height: 150%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body main #section-3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 400px;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+body main #section-3 #para-3 {
+  font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  line-height: 150%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body main #section-3 img {
+  width: 549px;
+  height: 350px;
 }
 body footer {
   display: flex;
