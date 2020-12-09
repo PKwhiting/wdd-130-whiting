@@ -24,7 +24,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 160%;
+  height: 150%;
   text-rendering: optimizeLegibility;
   background-color: #565D75;
 }
@@ -70,85 +70,78 @@ body header nav ul li a {
 body header nav ul li a:hover {
   color: #D4AFB9;
 }
-body main {
-  font-size: 1.3rem;
-  flex: 1;
-  padding: 15px;
-  margin: 0;
-  padding: 0;
+body main .banner {
+  width: 100%;
+  height: 80px;
+  background-color: #FFFFFF;
 }
-body main h1 {
-  color: #F2F79E;
-  font-size: 2.8em;
+body main .banner h1 {
   font-family: 'Convergence', sans-serif;
-  margin-left: 30px;
+  font-size: 4.2em;
+  color: #565D75;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-body main #intro-section {
+body main .intro {
+  padding: 30px;
+}
+body main .intro p {
+  font-size: 1.3rem;
+  font-family: 'Arvo', serif;
+  color: #FFFFFF;
+}
+body main #main {
   display: grid;
   grid-template-columns: 50% 50%;
-  height: 400px;
-  margin-left: 30px;
 }
-body main #intro-section #intro-para {
-  grid-column: 0.5;
-  font-family: 'Arvo', serif;
-  color: #FFFFFF;
-  margin-right: 15px;
-}
-body main #intro-section button {
-  background-color: #565D75;
-  border: 1px solid #FFFFFF;
-  border-radius: 40px;
-  font-size: 30px;
-  color: #FFFFFF;
-  font-family: 'Convergence', sans-serif;
-  width: 250px;
-  margin-left: 25px;
-  margin-right: auto;
-}
-body main #intro-section button:hover {
-  background-color: #D4AFB9;
-  border-color: #D4AFB9;
-}
-body main #intro-section img {
-  grid-column: 0.66666667;
-  background-color: transparent;
-  width: 600px;
+body main #main #contact-us {
   margin-top: 30px;
-  margin-left: 40px;
-  mix-blend-mode: multiply;
-}
-body main #card-container {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-body main .cards {
+  margin-left: 30px;
+  height: 740px;
+  width: 700px;
   background-color: #FFFFFF;
-  width: 300px;
-  height: 700px;
-  margin-top: auto;
-  margin-bottom: auto;
   box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
 }
-body main .cards-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 30px;
-}
-body main .card-text {
-  margin-left: 60px;
-  margin-right: 60px;
+body main #main #contact-us form {
   font-family: 'Arvo', serif;
+  font-size: 4.2em;
+  padding: 15px;
+  padding-right: 30px;
 }
-body main .card-button {
-  margin-right: auto;
-  margin-left: 90px;
+body main #main #contact-us form #input {
+  width: 100%;
+  height: 45px;
+  background-color: #F2F79E;
+  font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body main #main #contact-us form textarea {
+  width: 100%;
+  height: 300px;
+  background-color: #F2F79E;
+  font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  resize: none;
+  margin-top: 15px;
+}
+body main #main #contact-us form .submit {
+  background-color: #D4AFB9;
+  width: 100%;
+  height: 45px;
+  font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body main #main #outro {
+  color: #FFFFFF;
+  font-family: 'Arvo', serif;
+  font-size: 2.8em;
+  padding-left: 150px;
+  padding-right: 45px;
 }
 body footer {
   display: flex;
@@ -157,6 +150,7 @@ body footer {
   padding: 15px;
   background-color: #FFFFFF;
   color: black;
+  margin-bottom: -100px;
 }
 body footer #legal {
   flex: 1;

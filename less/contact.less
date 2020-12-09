@@ -89,86 +89,74 @@ body {
                 
             }
         }
-        #section-1 {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            height: 400px;
-            width: 100%;  
-            align-content: center;
-            justify-content: center;  
-
-            #para-1 {
-                font-family: @text-font;
+        .intro {
+            padding: @spacing*2;
+            p {
                 font-size: @font-size;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                line-height: 150%;
-                padding-left: @spacing;
-                padding-right: @spacing;
+                font-family: @text-font;
                 color: @secondary-color;
             }
-            img {
-                width: 550px;
-                height: 350px;
-                padding-left: 80px;
-            }
-
         }
-        #section-2 {
+        #main {
             display: grid;
             grid-template-columns: 50% 50%;
-            height: 400px;
-            width: 100%;
-            background-color: @secondary-color;
-            align-content: center;
-            justify-content: center;  
+            #contact-us {
+                margin-top: @spacing*2;
+                margin-left: @spacing*2;
+                height: 740px;
+                width: 700px;
+                background-color: @secondary-color;
+                box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+                
+                form {
+                    font-family: @text-font;
+                    font-size: @header-size*1.5;
+                    padding: @spacing;
+                    padding-right: @spacing*2;
+                    
+                    #input {
+                        width: 100%;
+                        height: 45px;
+                        background-color: @senary-color;
+                        font-family: @text-font;
+                        font-size: @font-size;
+                        margin-top: @spacing;
+                        margin-bottom: @spacing;
 
-            #para-2 {
-                font-family: @text-font;
-                font-size: @font-size;
-                grid-column-start: 2;
-                grid-column-end: 3;
-                line-height: 150%;
-                padding-left: @spacing;
-                padding-right: @spacing;
-            }
-            img {
-                width: 550px;
-                height: 350px;
-                padding-left: 40px;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                grid-row-start: 1;
-                grid-row-end: 2;
-            }
-        }
-        #section-3 {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            height: 400px;
-            width: 100%;
-            align-content: center;
-            justify-content: center;  
+                    }
 
-            #para-3 {
-                font-family: @text-font;
-                font-size: @font-size;
-                grid-column-start: 1;
-                grid-column-end: 2;
-                line-height: 150%;
-                padding-left: @spacing;
-                padding-right: @spacing;
+                    textarea {
+                        width: 100%;
+                        height: 300px;
+                        background-color: @senary-color;
+                        font-family: @text-font;
+                        font-size: @font-size;
+                        resize: none;
+                        margin-top: @spacing;
+                    }
+
+                    .submit {
+                        background-color: @tertiary-color;
+                        width: 100%;
+                        height: 45px;
+                        font-family: @text-font;
+                        font-size: @font-size;
+                        margin-top: @spacing;
+                        margin-bottom: @spacing;
+                    }
+
+                    
+                }
+            }
+
+            #outro {
                 color: @secondary-color;
+                font-family: @text-font;
+                font-size: @header-size;
+                padding-left: @spacing*10;
+                padding-right: @spacing*3;
             }
-
-            img {
-                width: 550px;
-                height: 350px;
-                padding-left: 80px;
-            }
-
         }
-
     }
     footer {
         display: flex;
@@ -177,6 +165,7 @@ body {
         padding: @spacing;
         background-color: @secondary-color;
         color: black;
+        margin-bottom: -100px;
 
         #legal {
             flex: 1;

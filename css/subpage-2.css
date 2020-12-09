@@ -99,6 +99,7 @@ body main #section-1 #para-1 {
   line-height: 150%;
   padding-left: 15px;
   padding-right: 15px;
+  color: #FFFFFF;
 }
 body main #section-1 img {
   width: 550px;
@@ -148,6 +149,7 @@ body main #section-3 #para-3 {
   line-height: 150%;
   padding-left: 15px;
   padding-right: 15px;
+  color: #FFFFFF;
 }
 body main #section-3 img {
   width: 550px;
@@ -159,8 +161,8 @@ body footer {
   flex-direction: row;
   font-size: 1.3rem;
   padding: 15px;
-  background-color: #565D75;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: black;
 }
 body footer #legal {
   flex: 1;
@@ -180,7 +182,7 @@ body footer nav ul li {
   margin-right: 7.5px;
 }
 body footer nav ul li a {
-  color: #FFFFFF;
+  color: #565D75;
   font-family: 'Convergence', sans-serif;
   font-size: 30px;
   text-decoration: none;
