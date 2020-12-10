@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKmSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Chettan 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloochettan2/v1/vm8rdRbmXEva26PK-NtuX4ynWEznQNFfMg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Convergence';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/convergence/v9/rax5HiePvdgXPmmMHcIPYRha.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 120%;
+  text-rendering: optimizeLegibility;
+  background-color: #565D75;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  padding: 15px;
+}
+body header div a {
+  color: #D4AFB9;
+  text-decoration: none;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+body header nav {
+  flex: 1;
+  text-align: right;
+  margin-top: 30px;
+}
+body header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body header nav ul li {
+  display: inline-block;
+  padding: 7.5px;
+  margin-right: 7.5px;
+}
+body header nav ul li a {
+  color: #FFFFFF;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: #D4AFB9;
+}
+body main .banner {
+  width: 100%;
+  height: 80px;
+  background-color: #FFFFFF;
+}
+body main .banner h1 {
+  font-family: 'Convergence', sans-serif;
+  font-size: 4.2em;
+  color: #565D75;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body main #specs-table {
+  color: #FFFFFF;
+  width: 100%;
+}
+body main #specs-table table {
+  margin: 10%;
+  width: 80%;
+  height: 600px;
+  font-family: 'Arvo', serif;
+  font-size: 2.8em;
+  background-color: #F2F79E;
+  color: black;
+  border: 3px solid black;
+  box-shadow: 3px 5px 22px 0px #000000;
+}
+body main div p {
+  justify-content: center;
+  align-content: center;
+  color: #FFFFFF;
+  font-family: 'Arvo', serif;
+  font-size: 2.8em;
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: center;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  padding: 15px;
+  background-color: #FFFFFF;
+  color: black;
+}
+body footer #legal {
+  flex: 1;
+}
+body footer nav {
+  flex: 1;
+  text-align: right;
+}
+body footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body footer nav ul li {
+  display: inline-block;
+  padding: 7.5px;
+  margin-right: 7.5px;
+}
+body footer nav ul li a {
+  color: #565D75;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body footer nav ul li a:hover {
+  color: #D4AFB9;
+}
