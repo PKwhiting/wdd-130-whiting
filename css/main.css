@@ -95,18 +95,19 @@ body main #intro-section #intro-para {
   color: #FFFFFF;
   margin-right: 15px;
 }
-body main #intro-section button {
+body main #intro-section a {
   background-color: #565D75;
   border: 1px solid #FFFFFF;
   border-radius: 40px;
   font-size: 30px;
   color: #FFFFFF;
   font-family: 'Convergence', sans-serif;
-  width: 250px;
   margin-left: 25px;
   margin-right: auto;
+  text-decoration: none;
+  padding: 4px 25px;
 }
-body main #intro-section button:hover {
+body main #intro-section a:hover {
   background-color: #D4AFB9;
   border-color: #D4AFB9;
 }
@@ -148,7 +149,19 @@ body main .card-text {
 }
 body main .card-button {
   margin-right: auto;
-  margin-left: 90px;
+  margin-left: 70px;
+  background-color: #A8D4AD;
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  font-size: 20px;
+  color: #565D75;
+  font-family: 'Convergence', sans-serif;
+  text-decoration: none;
+  padding: 4px 25px;
+}
+body main .card-button:hover {
+  background-color: #D4AFB9;
+  border-color: #D4AFB9;
 }
 body footer {
   display: flex;

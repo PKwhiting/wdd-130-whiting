@@ -100,18 +100,19 @@ body {
                 margin-right: @spacing;
             }
 
-            button{
+            a{
                 background-color: @primary-color;
                 border: 1px solid @secondary-color;
                 border-radius: 40px;
                 font-size: 30px;
                 color: @secondary-color;
                 font-family: @header-font;
-                width: 250px;
                 margin-left: 25px;
                 margin-right: auto;
+                text-decoration: none;
+                padding: 4px 25px;
             }
-            button:hover{
+            a:hover{
                 background-color: @tertiary-color;
                 border-color: @tertiary-color;
             }
@@ -160,7 +161,20 @@ body {
 
                 .card-button{
                     margin-right: auto;
-                    margin-left: 90px;
+                    margin-left: 70px;
+                    background-color: @quinary-color;
+                    border: 1px solid @secondary-color;
+                    border-radius: 40px;
+                    font-size: 20px;
+                    color: @primary-color;
+                    font-family: @header-font;
+                    text-decoration: none;
+                    padding: 4px 25px;
+
+                }
+                .card-button:hover{
+                    background-color: @tertiary-color;
+                    border-color: @tertiary-color;
                 }
     }
 
