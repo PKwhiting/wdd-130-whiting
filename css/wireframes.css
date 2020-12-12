@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKmSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Chettan 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloochettan2/v1/vm8rdRbmXEva26PK-NtuX4ynWEznQNFfMg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Convergence';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/convergence/v9/rax5HiePvdgXPmmMHcIPYRha.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  background-color: #565D75;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  padding: 15px;
+}
+body header div a {
+  color: #D4AFB9;
+  text-decoration: none;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+body header nav {
+  flex: 1;
+  text-align: right;
+  margin-top: 30px;
+}
+body header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body header nav ul li {
+  display: inline-block;
+  padding: 7.5px;
+  margin-right: 7.5px;
+}
+body header nav ul li a {
+  color: #FFFFFF;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: #D4AFB9;
+}
+body main .banner {
+  width: 100%;
+  height: 80px;
+  background-color: #FFFFFF;
+  margin-bottom: -60px;
+}
+body main .banner h1 {
+  font-family: 'Convergence', sans-serif;
+  font-size: 4.2em;
+  color: #565D75;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body main #wfpara {
+  text-align: center;
+  font-family: 'Arvo', serif;
+  font-size: 1.3rem;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+}
+body main #wireframes {
+  width: 100%;
+  height: 1200px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  margin-top: 80px;
+}
+body main #wireframes #img1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+body main #wireframes #img2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
+body main #wireframes #img3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+body main #wireframes #img4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  text-align: center;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-size: 1.3rem;
+  padding: 15px;
+  background-color: #FFFFFF;
+  color: black;
+}
+body footer #legal {
+  flex: 1;
+}
+body footer nav {
+  flex: 1;
+  text-align: right;
+}
+body footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body footer nav ul li {
+  display: inline-block;
+  padding: 7.5px;
+  margin-right: 7.5px;
+}
+body footer nav ul li a {
+  color: #565D75;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body footer nav ul li a:hover {
+  color: #D4AFB9;
+}
