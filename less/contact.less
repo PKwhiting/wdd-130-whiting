@@ -1,0 +1,204 @@
+@import "colors.less";
+
+@import "mixins.less";
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Baloo+Chettan+2:wght@800&family=Convergence&display=swap');
+@logo-font: 'Baloo Chettan 2', cursive;
+@header-font: 'Convergence', sans-serif;
+@text-font: 'Arvo', serif;
+
+@primary-color: #565D75;
+@secondary-color: #FFFFFF;
+@tertiary-color: #D4AFB9;
+@quaternary-color: #92B9BD;
+@quinary-color: #A8D4AD;
+@senary-color: #F2F79E;
+@spacing: 15px;
+@header-size: 2.8em;
+@font-size: 1.3rem;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150%;
+    text-rendering: optimizeLegibility;
+    background-color: @primary-color;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        font-size: @font-size;
+        padding: @spacing;
+            div{
+                a{
+                    color: @tertiary-color;
+                    text-decoration: none;
+                    font-family: @logo-font;
+                    font-size: 80px;
+                    font-weight: bold;
+                }
+            }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            margin-top: @spacing*2;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    padding: @spacing / 2;
+                    margin-right: @spacing / 2;
+                    a{
+                        color: @secondary-color;
+                        font-family: @header-font;
+                        font-size: 30px;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: #D4AFB9;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .banner {
+            width: 100%;
+            height: 80px;
+            background-color: @secondary-color;
+ 
+            h1 {
+                font-family: @header-font;
+                font-size: @header-size*1.5;
+                color: @primary-color;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+            }
+        }
+        .intro {
+            padding: @spacing*2;
+            p {
+                font-size: @font-size;
+                font-family: @text-font;
+                color: @secondary-color;
+            }
+        }
+        #main {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            #contact-us {
+                margin-top: @spacing*2;
+                margin-left: @spacing*2;
+                height: 740px;
+                width: 700px;
+                background-color: @secondary-color;
+                box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+                
+                form {
+                    font-family: @text-font;
+                    font-size: @header-size*1.5;
+                    padding: @spacing;
+                    padding-right: @spacing*2;
+                    
+                    #input {
+                        width: 100%;
+                        height: 45px;
+                        background-color: @senary-color;
+                        font-family: @text-font;
+                        font-size: @font-size;
+                        margin-top: @spacing;
+                        margin-bottom: @spacing;
+
+                    }
+
+                    textarea {
+                        width: 100%;
+                        height: 300px;
+                        background-color: @senary-color;
+                        font-family: @text-font;
+                        font-size: @font-size;
+                        resize: none;
+                        margin-top: @spacing;
+                    }
+
+                    .submit {
+                        background-color: @tertiary-color;
+                        width: 100%;
+                        height: 45px;
+                        font-family: @text-font;
+                        font-size: @font-size;
+                        margin-top: @spacing;
+                        margin-bottom: @spacing;
+                    }
+
+                    
+                }
+            }
+
+            #outro {
+                color: @secondary-color;
+                font-family: @text-font;
+                font-size: @header-size;
+                padding-left: @spacing*10;
+                padding-right: @spacing*3;
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        font-size: @font-size;
+        padding: @spacing;
+        background-color: @secondary-color;
+        color: black;
+        margin-bottom: -100px;
+
+        #legal {
+            flex: 1;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    padding: @spacing / 2;
+                    margin-right: @spacing / 2;
+
+                    a{
+                        color: @primary-color;
+                        font-family: @header-font;
+                        font-size: 30px;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: @tertiary-color;
+                    }
+            
+                    
+                }
+                   
+            }
+        }
+    }
+}

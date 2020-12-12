@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'Arvo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/arvo/v14/tDbD2oWUg0MKmSA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Chettan 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baloochettan2/v1/vm8rdRbmXEva26PK-NtuX4ynWEznQNFfMg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Convergence';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/convergence/v9/rax5HiePvdgXPmmMHcIPYRha.ttf) format('truetype');
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 170%;
+  text-rendering: optimizeLegibility;
+  background-color: #565D75;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 62.5%;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  padding: 15px;
+}
+body header div a {
+  color: #D4AFB9;
+  text-decoration: none;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+body header nav {
+  flex: 1;
+  text-align: right;
+  margin-top: 30px;
+}
+body header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body header nav ul li {
+  display: inline-block;
+  padding: 7.5px;
+  margin-right: 7.5px;
+}
+body header nav ul li a {
+  color: #FFFFFF;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  color: #D4AFB9;
+}
+body main {
+  font-size: 1.3rem;
+  flex: 1;
+  padding: 15px;
+  margin: 0;
+  padding: 0;
+}
+body main h1 {
+  color: #F2F79E;
+  font-size: 2.8em;
+  font-family: 'Convergence', sans-serif;
+  margin-left: 30px;
+}
+body main #intro-section {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 400px;
+  margin-left: 30px;
+}
+body main #intro-section #intro-para {
+  grid-column: 0.5;
+  font-family: 'Arvo', serif;
+  color: #FFFFFF;
+  margin-right: 15px;
+}
+body main #intro-section button {
+  background-color: #565D75;
+  border: 1px solid #FFFFFF;
+  border-radius: 40px;
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: 'Convergence', sans-serif;
+  width: 250px;
+  margin-left: 25px;
+  margin-right: auto;
+}
+body main #intro-section button:hover {
+  background-color: #D4AFB9;
+  border-color: #D4AFB9;
+}
+body main #intro-section img {
+  grid-column: 0.66666667;
+  background-color: transparent;
+  width: 600px;
+  margin-top: 30px;
+  margin-left: 40px;
+  mix-blend-mode: multiply;
+}
+body main #card-container {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main .cards {
+  background-color: #FFFFFF;
+  width: 300px;
+  height: 900px;
+  margin-top: auto;
+  margin-bottom: auto;
+  box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+}
+body main .cards-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+}
+body main .card-text {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: 'Arvo', serif;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.3rem;
+  padding: 15px;
+  background-color: #565D75;
+  color: #FFFFFF;
+}
+body footer #legal {
+  flex: 1;
+}
+body footer nav {
+  flex: 1;
+  text-align: right;
+}
+body footer nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+body footer nav ul li {
+  display: inline-block;
+  padding: 7.5px;
+  margin-right: 7.5px;
+}
+body footer nav ul li a {
+  color: #FFFFFF;
+  font-family: 'Convergence', sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+body footer nav ul li a:hover {
+  color: #D4AFB9;
+}

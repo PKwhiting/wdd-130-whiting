@@ -1,0 +1,247 @@
+@import "colors.less";
+
+@import "mixins.less";
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Baloo+Chettan+2:wght@800&family=Convergence&display=swap');
+@logo-font: 'Baloo Chettan 2', cursive;
+@header-font: 'Convergence', sans-serif;
+@text-font: 'Arvo', serif;
+
+@primary-color: #565D75;
+@secondary-color: #FFFFFF;
+@tertiary-color: #D4AFB9;
+@quaternary-color: #92B9BD;
+@quinary-color: #A8D4AD;
+@senary-color: #F2F79E;
+@spacing: 15px;
+@header-size: 2.8em;
+@font-size: 1.3rem;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    text-rendering: optimizeLegibility;
+    background-color: @primary-color;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+
+    header {
+        display: flex;
+        flex-direction: row;
+        font-size: @font-size;
+        padding: @spacing;
+            div{
+                a{
+                    color: @tertiary-color;
+                    text-decoration: none;
+                    font-family: @logo-font;
+                    font-size: 80px;
+                    font-weight: bold;
+                }
+            }
+
+        nav {
+            flex: 1;
+            text-align: right;
+            margin-top: @spacing*2;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    padding: @spacing / 2;
+                    margin-right: @spacing / 2;
+                    a{
+                        color: @secondary-color;
+                        font-family: @header-font;
+                        font-size: 30px;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: #D4AFB9;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        height: 1000px;
+        .banner {
+            width: 100%;
+            background-color: @secondary-color;
+            margin-bottom: -60px;
+ 
+            h1 {
+                font-family: @header-font;
+                font-size: @header-size*1.5;
+                color: @primary-color;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                
+            }
+        }
+
+        #styles {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+            margin-top: 80px;
+            #purpose {
+                grid-column-start: 2;
+                grid-column-end: 10;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                color: @secondary-color;
+                box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+                background-color: @secondary-color;
+                color: @primary-color;
+                text-align: center;
+                
+                h1 {
+                    font-family: @header-font;
+                    font-size: @header-size;
+                }
+                p {
+                    font-family: @text-font;
+                    font-size: @font-size;
+                }
+            }
+            #stylesheet {
+                background-color: @secondary-color;
+                grid-column-start: 2;
+                grid-column-end:5;
+                grid-row-start: 5;
+                grid-row-end: 10;
+                box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+                color: @primary-color;
+                h2 {
+                    font-family: @header-font;
+                    font-size: 2vw;
+                    margin:@spacing;
+
+                }
+                h1 {
+                    font-family: @logo-font;
+                    font-size: 5vw;
+                    margin: 0 0 0 @spacing;
+                    color: @tertiary-color;
+                }
+                p {
+                    font-family: @text-font;
+                    font-size: 1vw;
+                    margin: 0 @spacing 0 @spacing;
+                }
+            }
+            #colors {
+                background-color: @secondary-color;
+                grid-column-start: 7;
+                grid-column-end: 10;
+                grid-row-start: 5;
+                grid-row-end: 10;
+                box-shadow: -1px 0px 12px 0px rgba(46, 50, 50, 0.61);
+                color: @primary-color;
+                h2 {
+                    font-family: @header-font;
+                    font-size: 2vw;
+                    margin: @spacing;
+
+                }
+                p {
+                    font-family: @text-font;
+                    font-size: 1vw;
+                    margin: @spacing;
+                }
+                .primarydot {
+                    height: 3vh;
+                    width: 3vh;
+                    background-color: @primary-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                .tertiarydot {
+                    height: 3vh;
+                    width: 3vh;
+                    background-color: @tertiary-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                .quaternarydot {
+                    height: 3vh;
+                    width: 3vh;
+                    background-color: @quaternary-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                .quinarydot {
+                    height: 3vh;
+                    width: 3vh;
+                    background-color: @quinary-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+                .senarydot {
+                    height: 3vh;
+                    width: 3vh;
+                    background-color: @senary-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 0;
+        font-size: @font-size;
+        padding: @spacing;
+        background-color: @secondary-color;
+        color: black;
+        margin-top: 80px;
+
+        #legal {
+            flex: 1;
+        }
+
+        nav {
+            flex: 1;
+            text-align: right;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+
+                li {
+                    display: inline-block;
+                    padding: @spacing / 2;
+                    margin-right: @spacing / 2;
+
+                    a{
+                        color: @primary-color;
+                        font-family: @header-font;
+                        font-size: 30px;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        color: @tertiary-color;
+                    }
+            
+                    
+                }
+                   
+            }
+        }
+    }
+}
